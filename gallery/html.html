@@ -1,0 +1,16 @@
+<div class="product-gallery">
+  <div class="big-gallery owl-carousel owl-theme">
+      {foreach $product.images as $image}
+        <a data-fancybox="gallery" href="{$wa->shop->imgUrl($image, '970')}" data-index="{$image@index}">
+            {$wa->shop->imgHtml($image, '970')}
+        </a>
+      {/foreach}
+  </div>
+  <div class="small-gallery owl-carousel owl-theme">
+      {foreach $product.images as $image}
+        <a{if $image@first} class="active"{/if} href="#" data-index="{$image@index}">
+            {$wa->shop->imgHtml($image, '96x96')}
+        </a>
+      {/foreach}
+  </div>
+</div>

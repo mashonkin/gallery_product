@@ -1,0 +1,25 @@
+.product-gallery{
+  img{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 400px;
+  }
+}
+.big-gallery{
+  border: 1px solid #ededed;
+  text-align: center;
+  border-radius: 5px;
+  padding:10px;
+  margin-bottom: 15px;
+
+}
+.small-gallery{
+  a{
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    display: block;
+    &.active{
+      border: 2px solid #f24c24;
+    }
+  }
+}
